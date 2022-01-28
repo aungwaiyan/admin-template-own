@@ -1,0 +1,126 @@
+/* START NAV BAR  */
+.sidebars{
+    /* width:100%; */
+    height: 100vh;
+    background-color: #4287f5;
+    box-shadow: 5px 5px 5px #999;
+}
+
+
+
+img{
+    object-fit: cover;
+}
+
+.borderbottoms{
+     border-bottom: 1px groove #fff;
+}
+
+.deadhovers{
+    background-color:#d9111f;
+    border-radius: 5px;
+    box-shadow:2px 2px 2px #777;
+    transition:all 0.5s;
+}
+
+.deadhovers:hover{
+    background-color: #ff707a;
+    transform: translate(-1px);
+}
+
+.hovers{
+    transition:all 0.5s;
+}
+
+.hovers:hover{
+    background-color: #999;
+    border-radius: 5px;
+}
+
+/* Start Top Sidebar  */
+
+@media(max-width:750px){
+    .sidebars{
+        height: auto;
+        position:static;
+    }
+
+    .searchbtns{
+        position:static;
+    }
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.breadcrumb .dashs{
+       color:#f4f4f4;
+}
+.searchinputs{
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid #999;
+    border-radius: 0;
+}
+
+.searchinputs::placeholder{
+    color: #fff;
+}
+
+.searchbtns{
+    background-color: #4287f5;
+}
+
+.searchinputs:focus{
+    background-color:transparent;
+    color:#fff;
+    border-bottom: 2px solid #fff;
+    box-shadow: none;
+
+}
+
+
+/* End Top Sidebar  */
+/* END NAV BAR  */
+
+/* START CARD SECTION  */
+.cardcommons{
+    box-shadow: 1px 2px 5px #999;
+    transition: all 0.5s;
+}
+
+.cardcommons:hover{
+    box-shadow: 1px 3px 15px #999;
+    transform: translateY(-1px);
+}
+.cardcommonones{
+    border-left:5px solid #4287f5;
+}
+
+.cardcommontwos{
+    border-left: 5px solid green;
+}
+
+.cardcommonthrees{
+    border-left: 5px solid #d9111f;
+}
+
+.cardcommonfours{
+    border-left: 5px solid skyblue;
+}
+
+/* END CARD SECTION  */
+
+/* START TASK SECTION  */
+.bgcolors{
+    background-color: #f2f2f2;
+    box-shadow: 2px 2px 2px #777;
+    border-left:5px solid #4287f5;
+}
+
+a{
+    text-decoration: none;
+}
+/* END TASK SECTION  */

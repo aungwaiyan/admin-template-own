@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin Template</title>
+        <!-- fontawesome css 1  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- boostrap css 1 js 2 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <!-- custom css  -->
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <!-- START NAV BAR  -->
+
+        <nav class="navbar navbar-expand-md navbar-light">
+
+            <button type="button" class="navbar-toggler bg-light ms-auto" data-bs-toggle="collapse" data-bs-target="#mynav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="mynav" class="navbar-collapse collapse">
+                <div class="container-fluid">
+                    <div class="row">
+                      <!-- Start left side bar  -->
+                        <div class="col-xl-2 col-lg-3 col-md-4 fixed-top sidebars">
+
+                            <a href="#" class="navbar-brand text-white d-block m-0 text-center fw-bold py-2 borderbottoms"><i class="fas fa-globe me-2"></i>Online Sales</a>
+
+                            <div>
+                                <img src="img/user2.jpg" width="50px" class="rounded-circle mx-auto d-block py-1" alt="user2"/>
+                                <span class="text-white text-center d-block">Mr.Nicky</span>
+                                <span class="text-white text-center d-block mb-2">Project Manager</span>
+                            </div>
+
+                            <ul class="navbar-nav flex-column">
+                                <li class="nav-item"><a href="#" class="nav-link text-white p-3 deadhovers"><i class="fas fa-chart-pie fa-lg me-2"></i>Dashboard</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-white p-3 hovers"><i class="fas fa-user fa-lg me-2"></i>Profile</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-white p-3 hovers"><i class="fas fa-envelope fa-lg me-2"></i>Inbox</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-white p-3 hovers"><i class="fas fa-shopping-cart fa-lg me-2"></i>Ecommerce</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-white p-3 hovers"><i class="fas fa-chart-line fa-lg me-2"></i>Analytics</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-white p-3 hovers"><i class="fas fa-chart-bar fa-lg me-2"></i>Charts</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-white p-3 hovers"><i class="fas fa-table fa-lg me-2"></i>Table</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-white p-3 hovers"><i class="fas fa-truck fa-lg me-2"></i>Delivery</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link text-white p-3 hovers"><i class="fas fa-tools fa-lg me-2"></i>Setting</a></li>
+                            </ul>
+
+                        </div>  
+                      
+
+                      <!-- End left side bar  -->
+
+                      <!-- Start top side bar  -->
+                      <div class="col-xl-10 col-lg-9 col-md-8 ms-auto py-2 fixed-top searchbtns">
+                          <div class="row">
+                              <div class="col-md-4">
+                                  <nav>
+                                      <ol class="breadcrumb">
+                                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                          <li class="breadcrumb-item dashs">Dashboard</li>
+                                      </ol>
+                                  </nav>
+
+                              </div>
+
+                              <div class="col-md-5">
+                                  <form>
+                                      <div class="d-flex">
+                                          <input type="text" id="search" class="form-control rounded-0 searchinputs" placeholder="Search...." autocomplete="off">
+                                          <button type="button" class="btn rounded-0 buttons"><i class="fas fa-search text-light"></i></button>
+                                      </div>
+                                  </form>
+
+                              </div>
+
+                              <div class="col-md-3">
+                                  <ul class="navbar-nav">
+                                      <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-comments fa-1x text-light fa-lg"></i><sup class="badge bg-danger">6</sup></a></li>
+                                      <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-bell text-light fa-lg"></i><sup class="badge bg-danger">9</sup></a></li>
+                                      <li class="nav-item ms-md-auto"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#signout"><i class="fas fa-sign-out text-danger fa-lg"></i></a></li>
+                                  </ul>
+
+                              </div>
+                          </div>
+
+                      </div>
+                      <!-- End left side bar  -->
+                    </div>
+                </div>
+            </div>
+
+
+        </nav>
+
+        <!-- END NAV BAR  -->
+
+        <!-- START CARD SECTION  -->
+        <section>
+            <div class="container-fluid">
+                <div class="row mt-3 pt-md-5">
+                    <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+                       <div class="row mb-5">
+
+                          <div class="col-xl-3 col-sm-6">
+                              <div class="card cardcommonones cardcommons">
+                                  <div class="card-body">
+
+                                    <div class="d-flex justify-content-between">
+                                        <i class="fas fa-shopping-cart fa-4x text-primary"></i>
+                                        <div class="text-secondary text-end">
+                                            <h5>New Orders</h5>
+                                            <h3>15,000</h3>
+                                        </div>
+
+                                    </div>
+
+
+
+                                  </div>
+                                  <div class="card-footer text-secondary">
+                                      <i class="fas fa-sync"></i>
+                                      <span>Updated every 30 minutes</span>
+                                  </div>
+
+                              </div>
+                          </div>
+
+                          <div class="col-xl-3 col-sm-6">
+                            <div class="card cardcommontwos cardcommons">
+                                <div class="card-body">
+
+                                  <div class="d-flex justify-content-between">
+                                      <i class="fas fa-money-bill-alt fa-4x text-success"></i>
+                                      <div class="text-secondary text-end">
+                                          <h5>Incomes</h5>
+                                          <h3>$ 35,000</h3>
+                                      </div>
+
+                                  </div>
+
+
+
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fas fa-table"></i>
+                                    <span>In this current month</span>
+                                </div>
+
+                            </div>
+                          </div>
+
+                          <div class="col-xl-3 col-sm-6">
+                            <div class="card cardcommonthrees cardcommons">
+                                <div class="card-body">
+
+                                  <div class="d-flex justify-content-between">
+                                      <i class="fas fa-file-invoice-dollar fa-4x text-danger"></i>
+                                      <div class="text-secondary text-end">
+                                          <h5>Credit Sales</h5>
+                                          <h3>$ 5,000</h3>
+                                      </div>
+
+                                  </div>
+
+
+
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fas fa-sync"></i>
+                                    <span>Updated every 30 minutes</span>
+                                </div>
+
+                            </div>
+                          </div>
+
+                          <div class="col-xl-3 col-sm-6">
+                            <div class="card cardcommonfours cardcommons">
+                                <div class="card-body">
+
+                                  <div class="d-flex justify-content-between">
+                                      <i class="fas fa-eye fa-4x text-info"></i>
+                                      <div class="text-secondary text-end">
+                                          <h5>Page Visitors</h5>
+                                          <h3>5,500</h3>
+                                      </div>
+
+                                  </div>
+
+
+
+                                </div>
+                                <div class="card-footer text-secondary">
+                                    <i class="fas fa-stopwatch"></i>
+                                    <span>In the last 24 hours</span>
+                                </div>
+
+                            </div>
+                          </div>
+
+                     
+
+
+
+
+                       </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- END CARD SECTION  -->
+
+        <!-- START SALARY SECTION  -->
+        <section >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+                        <div class="row mb-3">
+                            <div class="col-md-12">
+                                <h3 class="text-center mb-3">Staff Salary</h3>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Salary</th>
+                                            <th>Date</th>
+                                            <th>Contact</th>
+                                        </tr>
+
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Aung Aung</td>
+                                            <td>Accountant</td>
+                                            <td>Mandalay</td>
+                                            <td>$50,000</td>
+                                            <td>1/Jan/2021</td>
+                                            <td><button type="button" class="btn btn-danger btn-sm rounded-0 me-md-2"><i class="fas fa-phone"></i></button><button type="button" class="btn btn-info btn-sm rounded-0"><i class="fas fa-comment text-light"></i></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Maung Maung</td>
+                                            <td>Software Engineer</td>
+                                            <td>Yangon</td>
+                                            <td>$60,000</td>
+                                            <td>1/Jan/2021</td>
+                                            <td><button type="button" class="btn btn-danger btn-sm rounded-0 me-md-2"><i class="fas fa-phone"></i></button><button type="button" class="btn btn-info btn-sm rounded-0"><i class="fas fa-comment text-light"></i></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Aye Aye</td>
+                                            <td>Sales Assitant</td>
+                                            <td>Mandalay</td>
+                                            <td>$70,000</td>
+                                            <td>1/Jan/2021</td>
+                                            <td><button type="button" class="btn btn-danger btn-sm rounded-0 me-2"><i class="fas fa-phone"></i></button><button type="button" class="btn btn-info btn-sm rounded-0"><i class="fas fa-comment text-light"></i></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Kyaw Kyaw</td>
+                                            <td>Software Engineer</td>
+                                            <td>Myitkyina</td>
+                                            <td>$80,000</td>
+                                            <td>1/Jan/2021</td>
+                                            <td><button type="button" class="btn btn-danger btn-sm rounded-0 me-2"><i class="fas fa-phone"></i></button><button type="button" class="btn btn-info btn-sm rounded-0"><i class="fas fa-comment text-light"></i></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Hla Hla</td>
+                                            <td>Supervisor</td>
+                                            <td>Mandalay</td>
+                                            <td>$50,000</td>
+                                            <td>1/Jan/2021</td>
+                                            <td><button type="button" class="btn btn-danger btn-sm rounded-0 me-2"><i class="fas fa-phone"></i></button><button type="button" class="btn btn-info btn-sm rounded-0"><i class="fas fa-comment text-light"></i></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Tun Tun</td>
+                                            <td>Software Engineer</td>
+                                            <td>Myitkyina</td>
+                                            <td>$80,000</td>
+                                            <td>1/Jan/2021</td>
+                                            <td><button type="button" class="btn btn-danger btn-sm rounded-0 me-2"><i class="fas fa-phone"></i></button><button type="button" class="btn btn-info btn-sm rounded-0"><i class="fas fa-comment text-light"></i></button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Mya Mya</td>
+                                            <td>Accountant</td>
+                                            <td>Yangon</td>
+                                            <td>$70,000</td>
+                                            <td>1/Jan/2021</td>
+                                            <td><button type="button" class="btn btn-danger btn-sm rounded-0 me-2"><i class="fas fa-phone"></i></button><button type="button" class="btn btn-info btn-sm rounded-0"><i class="fas fa-comment text-light"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <!-- Start Pagination  -->
+                                <nav>
+                                    <ul class="pagination pagination-md justify-content-center">
+                                        <li class="page-item"><a href="#" class="page-link"><span>&laquo;</span></a></li>
+                                        <li class="page-item active"><a href="#" class="page-link"><span>1</span></a></li>
+                                        <li class="page-item"><a href="#" class="page-link"><span>2</span></a></li>
+                                        <li class="page-item"><a href="#" class="page-link"><span>3</span></a></li>
+                                        <li class="page-item"><a href="#" class="page-link"><span>4</span></a></li>
+                                        <li class="page-item"><a href="#" class="page-link"><span>5</span></a></li>
+                                        <li class="page-item"><a href="#" class="page-link"><span>&raquo;</span></a></li>
+                                    </ul>
+                                </nav>
+                                <!-- End Pagination  -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SALARY SECTION  -->
+
+        <!-- START PAYMENT SECTION  -->
+           <section>
+               <div class="container-fluid">
+                   <div class="row">
+                       <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+                           <div class="row mb-4">
+                               <div class="col-md-12">
+                                   <h3 class="text-center mb-3">Order Payments</h3>
+                                   <table class="table table-striped table-hover">
+                                       <thead>
+                                           <tr>
+                                               <th>Id</th>
+                                               <th>Name</th>
+                                               <th>Order Item</th>
+                                               <th>Price</th>
+                                               <th>Date</th>
+                                               <th>Status</th>
+                                           </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Maung Maung</td>
+                                                <td>Ipad mini</td>
+                                                <td>$450</td>
+                                                <td>1/Jun/2021</td>
+                                                <td><button type="button" class="btn btn-sm btn-success">Approved</button></td>
+                                            </tr>
+ 
+                                            <tr>
+                                               <td>2</td>
+                                               <td>Kyaw Kyaw</td>
+                                               <td>Smart Watch</td>
+                                               <td>$350</td>
+                                               <td>1/Jun/2021</td>
+                                               <td><button type="button" class="btn btn-sm btn-danger">Pending</button></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Tun Tun</td>
+                                                <td>Dell Inspiration</td>
+                                                <td>$1050</td>
+                                                <td>1/Jun/2021</td>
+                                                <td><button type="button" class="btn btn-sm btn-success">Approved</button></td>
+                                             </tr>
+
+                                             <tr>
+                                                <td>4</td>
+                                                <td>Aye Aye</td>
+                                                <td>Macbook Pro 2021</td>
+                                                <td>$2050</td>
+                                                <td>1/Jun/2021</td>
+                                                <td><button type="button" class="btn btn-sm btn-success">Approved</button></td>
+                                             </tr>
+
+                                             <tr>
+                                                <td>5</td>
+                                                <td>Soe Soe</td>
+                                                <td>I phone 13</td>
+                                                <td>$799</td>
+                                                <td>1/Jun/2021</td>
+                                                <td><button type="button" class="btn btn-sm btn-danger">Pending</button></td>
+                                             </tr>
+
+                                             <tr>
+                                                <td>6</td>
+                                                <td>Hla Hla</td>
+                                                <td>I phone 12</td>
+                                                <td>$699</td>
+                                                <td>1/Jun/2021</td>
+                                                <td><button type="button" class="btn btn-sm btn-success">Approved</button></td>
+                                             </tr>
+
+                                             <tr>
+                                                <td>7</td>
+                                                <td>Mya Mya</td>
+                                                <td>Asus Notebook</td>
+                                                <td>$999</td>
+                                                <td>1/Jun/2021</td>
+                                                <td><button type="button" class="btn btn-sm btn-success">Approved</button></td>
+                                             </tr>
+                                        </tbody>
+                                   </table>
+
+                                <!-- Start Pagination  -->
+                                <nav>
+                                    <ul class="pagination pagination-md justify-content-center">
+                                        <li class="page-item"><a href="#" class="page-link"><span>Prev</span></a></li>
+                                        <li class="page-item"><a href="#" class="page-link"><span>1</span></a></li>
+                                        <li class="page-item"><a href="#" class="page-link"><span>2</span></a></li>
+                                        <li class="page-item active"><a href="#" class="page-link"><span>3</span></a></li>
+                                        <li class="page-item"><a href="#" class="page-link"><span>4</span></a></li>
+                                        <li class="page-item"><a href="#" class="page-link"><span>5</span></a></li>
+                                        <li class="page-item"><a href="#" class="page-link"><span>Next</span></a></li>
+                                    </ul>
+                                </nav>
+                                <!-- End Pagination  -->
+
+                               </div>
+
+                           </div>
+                       </div>
+
+                   </div>
+               </div>
+           </section>
+        <!-- END PAYMENT SECTION  -->
+
+        <!-- START PROGRESS AND TASK SECTION  -->
+           <section>
+               <div class="container-fluid">
+
+                   <div class="row">
+
+                    <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+                        <div class="row mb-5">
+                            <div class="col-xl-6 col-12">
+
+                                <div class="bg-muted text-dark">
+                                    <h4 class="text-center py-1">Payment Methods</h4>
+
+                                    <h5>Paypal</h5>
+                                    <div class="progress mb-4" style="height:25px">
+                                        <div class="progress-bar progress-bar-striped" style="width:40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+                                    </div>
+
+                                    <h5>Payoneer</h5>
+                                    <div class="progress mb-4" style="height:25px">
+                                        <div class="progress-bar progress-bar-striped bg-danger" style="width:30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                    </div>
+
+                                    <h5>Wise</h5>
+                                    <div class="progress mb-4" style="height:25px">
+                                        <div class="progress-bar progress-bar-striped bg-info" style="width:20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+                                    </div>
+
+                                    <h5>Visa</h5>
+                                    <div class="progress" style="height:25px">
+                                        <div class="progress-bar progress-bar-striped bg-warning" style="width:10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">10%</div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-xl-6 col-12">
+
+                                <h4 class="mb-3">Tasks:</h4>
+
+                                <div class="col-11 d-flex mb-3">
+                                    <input type="text" name="task" id="task" class="form-control rounded-0" placeholder="Enter your task..." autocomplete="off" />
+                                    <button type="button" class="btn btn-sm btn-danger rounded-0">Add Task</button>
+                                </div>
+
+                                <div class="container-fluid bgcolors mb-2">
+                                    <div class="row align-items-center py-3">
+
+                                        <div class="col-1 form-switch">
+                                            <input type="checkbox" name="check1" id="check1" class="form-check-input" checked/>
+                                        </div>
+
+                                        <div class="col-8">
+                                            <span>Delivery services to mandalay township.</span>
+                                            <span>Contact:0912345678</span>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <a href="#" class="me-3" title="<i class='fas fa-edit text-primary'></i><h6>edit</h6>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"><i class="fas fa-edit fa-lg text-primary"></i></a>
+                                            <a href="#" title="<i class='fas fa-trash-alt text-danger'></i><h6>delete</h6>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"><i class="fas fa-trash-alt fa-lg text-danger"></i></a>
+                                        </div>
+
+                                     </div>
+                                </div>
+
+                                <div class="container-fluid bgcolors mb-2">
+                                    <div class="row align-items-center py-3">
+
+                                        <div class="col-1 form-switch">
+                                            <input type="checkbox" name="check2" id="check2" class="form-check-input"/>
+                                        </div>
+
+                                        <div class="col-8">
+                                            <span>Delivery services to mawlamyine township.</span>
+                                            <span>Contact:0912345678</span>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <a href="#" class="me-3" title="<i class='fas fa-edit text-primary'></i><h6>edit</h6>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"><i class="fas fa-edit fa-lg text-primary"></i></a>
+                                            <a href="#" title="<i class='fas fa-trash-alt text-danger'></i><h6>delete</h6>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"><i class="fas fa-trash-alt fa-lg text-danger"></i></a>
+                                        </div>
+
+                                     </div>
+                                </div>
+
+                                <div class="container-fluid bgcolors mb-2">
+                                    <div class="row align-items-center py-3">
+
+                                        <div class="col-1 form-switch">
+                                            <input type="checkbox" name="check3" id="check3" class="form-check-input"/>
+                                        </div>
+
+                                        <div class="col-8">
+                                            <span>Delivery services to yangon township.</span>
+                                            <span>Contact:0912345678</span>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <a href="#" class="me-3" title="<i class='fas fa-edit text-primary'></i><h6>edit</h6>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"><i class="fas fa-edit fa-lg text-primary"></i></a>
+                                            <a href="#" title="<i class='fas fa-trash-alt text-danger'></i><h6>delete</h6>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"><i class="fas fa-trash-alt fa-lg text-danger"></i></a>
+                                        </div>
+
+                                     </div>
+                                </div>
+
+                                <div class="container-fluid bgcolors mb-2">
+                                    <div class="row align-items-center py-3">
+
+                                        <div class="col-1 form-switch">
+                                            <input type="checkbox" name="check4" id="check4" class="form-check-input"/>
+                                        </div>
+
+                                        <div class="col-8">
+                                            <span>Delivery services to myitkyina township.</span>
+                                            <span>Contact:0912345678</span>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <a href="#" class="me-3" title="<i class='fas fa-edit text-primary'></i><h6>edit</h6>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"><i class="fas fa-edit fa-lg text-primary"></i></a>
+                                            <a href="#" title="<i class='fas fa-trash-alt text-danger'></i><h6>delete</h6>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"><i class="fas fa-trash-alt fa-lg text-danger"></i></a>
+                                        </div>
+
+                                     </div>
+                                </div>
+
+                                <div class="container-fluid bgcolors mb-2">
+                                    <div class="row align-items-center py-3">
+
+                                        <div class="col-1 form-switch">
+                                            <input type="checkbox" name="check5" id="check5" class="form-check-input"/>
+                                        </div>
+
+                                        <div class="col-8">
+                                            <span>Delivery services to Taunggyi township.</span>
+                                            <span>Contact:0912345678</span>
+                                        </div>
+
+                                        <div class="col-2">
+                                            <a href="#" class="me-3" title="<i class='fas fa-edit text-primary'></i><h6>edit</h6>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"><i class="fas fa-edit fa-lg text-primary"></i></a>
+                                            <a href="#" title="<i class='fas fa-trash-alt text-danger'></i><h6>delete</h6>" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"><i class="fas fa-trash-alt fa-lg text-danger"></i></a>
+                                        </div>
+
+                                     </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                   </div>
+
+               </div>
+           </section>
+
+        <!-- END PROGRESS AND TASK SECTION  -->
+
+        <!-- START CUSTOMER SECTION  -->
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+                       <div class="row">
+
+                         <div class="col-xl-7">
+                            <h3 class="text-center text-muted mb-3">Customer Feedback</h3>
+
+                            <div>
+
+                                <div class="card mb-3">
+                                    <div class="card-header">
+                                       <div class="d-grid">
+                                         <button class="btn btn-primary text-light text-start" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                             <img src="img/user1.jpg" width="50px" class="me-4" alt="user1"/>
+                                             <span>Ms.Aye Aye feedback your shop.</span>
+                                         </button>
+                                       </div>
+
+                                    </div>
+                                    
+                                    <div class="collapse show" id="collapse1">
+                                        <div class="card-body">
+                                            <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</small>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="card mb-3">
+                                    <div class="card-header">
+                                       <div class="d-grid">
+                                         <button class="btn btn-primary text-light text-start" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                             <img src="img/user2.jpg" width="50px" class="me-4" alt="user2"/>
+                                             <span>Mr.Tun Tun feedback your shop.</span>
+                                         </button>
+                                       </div>
+
+                                    </div>
+                                    
+                                    <div class="collapse" id="collapse2">
+                                        <div class="card-body">
+                                            <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</small>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="card mb-3">
+                                    <div class="card-header">
+                                       <div class="d-grid">
+                                         <button class="btn btn-primary text-light text-start" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                             <img src="img/user3.jpg" width="50px" class="me-4" alt="user3"/>
+                                             <span>Ms.Hla Hla feedback your shop.</span>
+                                         </button>
+                                       </div>
+
+                                    </div>
+                                    
+                                    <div class="collapse" id="collapse3">
+                                        <div class="card-body">
+                                            <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</small>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="card mb-3">
+                                    <div class="card-header">
+                                       <div class="d-grid">
+                                         <button class="btn btn-primary text-light text-start" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                             <img src="img/user1.jpg" width="50px" class="me-4" alt="user1"/>
+                                             <span>Ms.Mya Mya feedback your shop.</span>
+                                         </button>
+                                       </div>
+
+                                    </div>
+                                    
+                                    <div class="collapse" id="collapse4">
+                                        <div class="card-body">
+                                            <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</small>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="card mb-3">
+                                    <div class="card-header">
+                                       <div class="d-grid">
+                                         <button class="btn btn-primary text-light text-start" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                                             <img src="img/user2.jpg" width="50px" class="me-4" alt="user1"/>
+                                             <span>Mr.Kyaw Kyaw feedback your shop.</span>
+                                         </button>
+                                       </div>
+
+                                    </div>
+                                    
+                                    <div class="collapse" id="collapse5">
+                                        <div class="card-body">
+                                            <small>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</small>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                         </div>
+
+                         <div class="col-xl-5">
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="text-center text-muted mb-4">Quick Status Post</h4>
+
+                                    <ul class="list-inline text-center mb-3">
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fas fa-video text-primary"></i>
+                                                <span class="text-muted">Live</span>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item mx-5">
+                                            <a href="#">
+                                                <i class="fas fa-camera text-info"></i>
+                                                <span class="text-muted">Post</span>
+                                               
+                                            </a>
+                                        </li>
+
+                                        <li class="list-inline-item">
+                                            <a href="#">
+                                                <i class="fas fa-map-marker text-danger"></i>
+                                                <span class="text-muted">Check-in</span>
+                                               
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <form action="" method="">
+                                        <div class="form-group">
+                                            <input type="text" name="status" id="status" class="form-control py-2 mb-3" placeholder="Write here your status..." />
+                                        </div>
+
+                                        <div class="d-grid">
+                                            <button type="Submit" class="btn btn-primary text-light fw-bold text-uppercase py-2">Submit Post</button>
+                                        </div>
+                                    </form>
+
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <div class="card bg-light">
+                                                <i class="fas fa-calendar-alt fa-8x text-warning text-center py-2 m-auto"></i>
+                                                <div class="card-body">
+                                                    <p class="text-center">Sun, 1/Jun/2021</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-6">
+
+                                            <div class="card bg-light">
+                                                <i class="fas fa-clock fa-8x text-success text-center py-2 m-auto"></i>
+                                                <div class="card-body">
+                                                    <p class="text-center">10:00 AM</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                         </div>
+
+                       </div>
+                
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- END CUSTOMER SECTION  -->
+
+        <!-- START FOOTER SECTION  -->
+
+                <footer>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-9 col-md-8 ms-auto">
+                                <div class="row border-top pt-3">
+                                    <div class="col-lg-12 text-center">
+        
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a href="#" class="text-dark">Mr.nickysales@gmail.com</a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#" class="text-dark">About</a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a href="#" class="text-dark">Contact</a>
+                                            </li>
+                                        </ul>
+
+                                        <p>&copy; <span id="getyear"></span> Copyright,All Rights Reversed.</p>
+        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+        
+            <!-- END FOOTER SECTION  -->
+
+
+
+
+        <!-- START MODAL AREA  -->
+
+        <!-- Start Signout Modal  -->
+        <div id="signout" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                       <h4>Are you sure want to exit?</h4>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Please type "Quit" to confirm.</p>
+                        <input type="text" name="quit" id="quit" class="form-control"/>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Logout</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Signout Modal  -->
+        <!-- END MODAL AREA  -->
+
+        <!-- jquery js 1  -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+        <!-- bootstrap css 1 js2  -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        <!-- custom js  -->
+        <script src="js/app.js" type="text/javascript"></script>
+    </body>
+</html>
